@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your Favourite Music is here</title>
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAV ================= -->
+    <nav>
+        <ul>
+            <li class="brand">
+                <img src="Song_Cover_Page/Spotify-Icon-Logo.wine.svg" alt="spotify">
+                Spotify
+            </li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <!-- ================= MAIN ================= -->
+    <div class="container">
+
+        <div class="songlist">
+            <h1>Best of NCS – No Copyright Sounds</h1>
+
+            <div class="songitemContainer">
+
+                <!-- Song Item Template (0–9) -->
+                <div class="songitem">
+                    <img alt="cover">
+                    <span class="songName">Song Name</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">
+                            0:00
+                            <i id="0" class="songItemPlay fa-solid fa-play"></i>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="songitem">
+                    <img alt="cover">
+                    <span class="songName">Song Name</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">
+                            0:00
+                            <i id="1" class="songItemPlay fa-solid fa-play"></i>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="songitem">
+                    <img alt="cover">
+                    <span class="songName">Song Name</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">
+                            0:00
+                            <i id="2" class="songItemPlay fa-solid fa-play"></i>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="songitem">
+                    <img alt="cover">
+                    <span class="songName">Song Name</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">
+                            0:00
+                            <i id="3" class="songItemPlay fa-solid fa-play"></i>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="songitem">
+                    <img alt="cover">
+                    <span class="songName">Song Name</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">
+                            0:00
+                            <i id="4" class="songItemPlay fa-solid fa-play"></i>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="songitem">
+                    <img alt="cover">
+                    <span class="songName">Song Name</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">
+                            0:00
+                            <i id="5" class="songItemPlay fa-solid fa-play"></i>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="songitem">
+                    <img alt="cover">
+                    <span class="songName">Song Name</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">
+                            0:00
+                            <i id="6" class="songItemPlay fa-solid fa-play"></i>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="songitem">
+                    <img alt="cover">
+                    <span class="songName">Song Name</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">
+                            0:00
+                            <i id="7" class="songItemPlay fa-solid fa-play"></i>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="songitem">
+                    <img alt="cover">
+                    <span class="songName">Song Name</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">
+                            0:00
+                            <i id="8" class="songItemPlay fa-solid fa-play"></i>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="songitem">
+                    <img alt="cover">
+                    <span class="songName">Song Name</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">
+                            0:00
+                            <i id="9" class="songItemPlay fa-solid fa-play"></i>
+                        </span>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="songBanner"></div>
+    </div>
+
+    <!-- ================= BOTTOM PLAYER ================= -->
+    <div class="bottom">
+
+        <!-- Progress Bar -->
+        <input type="range" id="myProgressBar" value="0" max="100">
+
+        <!-- Time -->
+        <div class="songTime">
+            <span id="currentTime">0:00</span> /
+            <span id="currentDuration">0:00</span>
+        </div>
+
+        <!-- Controls -->
+        <div class="icons">
+            <i class="fa-solid fa-backward-step fa-2x" id="previous"></i>
+            <i class="fa-solid fa-play fa-3x" id="masterPlay"></i>
+            <i class="fa-solid fa-forward-step fa-2x" id="next"></i>
+        </div>
+
+        <!-- Song Info -->
+        <div class="songinfo">
+            <img src="Song_Cover_Page/3efe1cb845954233246f60d5d8395dd0.gif" width="42" id="gif" style="opacity: 0;">
+            <span id="masterSongName"></span>
+        </div>
+
+        <!-- Volume -->
+        <div class="volumeControl">
+            <i class="fa-solid fa-volume-high"></i>
+            <input type="range" id="volumeBar" min="0" max="100" value="100">
+        </div>
+
+    </div>
+
+    <!-- ================= SCRIPT ================= -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
